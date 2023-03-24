@@ -1,0 +1,374 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/icons/sitelogo.ico" />
+    <title>BYF Screener</title>
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.datatables.net/v/bs5/dt-1.13.4/r-2.4.1/datatables.min.css" rel="stylesheet"/>
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/a809044aa3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <!-- JS FILES -->
+    <script defer src="../js/loader.js"></script>
+    
+    <script>
+      $(document).ready(function () {
+        $("#headernav").load("../assets/allpage-html/navbar.html");
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#footy").load("../assets/allpage-html/footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <!-- LOADER -->
+    <div class="page-loader" id="page-loader">
+      <div class="loader-spinner"></div>
+    </div>
+    <!-- NAV -->
+    <div id="headernav"></div>
+    <!-- PAGE TITLE -->
+    <section>
+      <div class="container-fluid titlecontainer">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12">
+            <h1 class="titconh1">BYF SCREENER</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-sm-12">
+            <p>
+              <a class="titcon-a" href="../index.html"
+                ><img src="../assets/icons/home.png" class="titconicon" /><span
+                  class="titconp"
+                  >Ana Sayfa ></span
+                ></a
+              ><a class="titcon-a" href="../html/byfscreener.html"
+                ><span class="titconp2"> BYF Screener</span></a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <!-- CONTENT SECTION -->
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <!-- FİLTRELER / COLLAPSED MENU / RADIO&CHECKBOXES / BUTTONS -->
+          <div class="col-lg-4 col-md-12 col-sm-12 sub-tablecol">
+            <div class="list-group lgi-div">
+              <li class="list-group-item">
+                <div class="ms-2 me-auto align-items-start filter-div">
+                  <div class="filter-type">Filtreler</div>
+                  <button class="btn filter-but" id="clr-btn" type="reset">Temizle</button>
+                </div>
+              </li>
+              <button type="button" class="list-group-item list-group-item-action lgibg " data-bs-toggle="collapse" data-bs-target="#collapseVarlik" aria-expanded="false" aria-controls="collapseExample">
+                Varlık
+                <span class="material-icons lgi-icon">chevron_right</span>
+              </button>
+              <div class="collapse" id="collapseVarlik">
+                <ul class="list-group">
+                  <button type="button" class="list-group-item list-group-item-action lgi-collapse" data-bs-toggle="collapse" data-bs-target="#collapseAlt" aria-expanded="false" aria-controls="collapseExample">
+                    <li class="list-group-item lgi-bg2">
+                      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+                      <label class="form-check-label" for="firstRadio">Alternatifler</label>
+                    </li>
+                  </button>
+                  <div class="collapse" id="collapseAlt">
+                    <ul class="list-group">
+                      <li class="list-group-item d-flex align-items-center">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                        <label class="form-check-label" for="firstCheckbox">Hedge Fund</label>
+                        <span class="badge rounded-pill ms-auto">(16)</span>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                        <label class="form-check-label" for="firstCheckbox">Enflasyon Beklentisi</label>
+                        <span class="badge rounded-pill ms-auto">(5)</span>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                        <label class="form-check-label" for="firstCheckbox">Kısa/Uzun</label>
+                        <span class="badge rounded-pill ms-auto">(1)</span>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                        <label class="form-check-label" for="firstCheckbox">Ayarlanmış</label>
+                        <span class="badge rounded-pill ms-auto">(7)</span>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                        <label class="form-check-label" for="firstCheckbox">Gerçek Kar</label>
+                        <span class="badge rounded-pill ms-auto">(88)</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <li class="list-group-item lgi-bg2">
+                    <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+                    <label class="form-check-label" for="secondRadio">Bonds</label>
+                  </li>
+                  <li class="list-group-item lgi-bg2">
+                    <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+                    <label class="form-check-label" for="thirdRadio">Commodity</label>
+                  </li>
+                </ul>
+              </div>
+              <button type="button" class="list-group-item list-group-item-action lgibg">Öznitelikler
+                <span class="material-icons lgi-icon">chevron_right</span>
+              </button>
+              <button type="button" class="list-group-item list-group-item-action lgibg">İhraçcı
+                <span class="material-icons lgi-icon">chevron_right</span>
+              <button type="button" class="list-group-item list-group-item-action lgibg">Marka
+                <span class="material-icons lgi-icon">chevron_right</span>
+              </button>
+              <button type="button" class="list-group-item list-group-item-action lgibg">Mimari
+                <span class="material-icons lgi-icon">chevron_right</span>
+              </button>
+              <button type="button" class="list-group-item list-group-item-action lgibg">Giderler
+                <span class="material-icons lgi-icon">chevron_right</span>
+              </button>
+              <button type="button" class="list-group-item list-group-item-action lgibg">Likidite
+                <span class="material-icons lgi-icon">chevron_right</span>
+              </button>
+              <button type="button" class="list-group-item list-group-item-action lgibg">ESC Skorları
+                <span class="material-icons lgi-icon">chevron_right</span>
+              </button>
+              <button type="button" class="list-group-item list-group-item-action lgibg">Fon Varlıkları
+                <span class="material-icons lgi-icon">chevron_right</span>
+              </button>
+              <button type="button" class="list-group-item list-group-item-action lgibg">Risk Metrikleri
+                <span class="material-icons lgi-icon">chevron_right</span>
+              </button>
+              <button type="button" class="list-group-item list-group-item-action lgibg">Holdingler
+                <span class="material-icons lgi-icon">chevron_right</span>
+              </button>
+              <button type="button" class="list-group-item list-group-item-action lgibg">Popüler Temalar
+                <span class="material-icons lgi-icon">chevron_right</span>
+              </button>
+              
+            </div>
+          </div>
+          <!-- DATA TABLE  -->
+          <div class="col-lg-8 col-md-12 col-sm-12 sub-tablecol">
+            <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="../html/byfscreener.html"
+                  >Genel Bakış</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">İadeler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Fon Akışları</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Masraflar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Temettüler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Risk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Holdingler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Vergiler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Teknikler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Analiz</a>
+              </li>
+            </ul>
+            <table id="datable" class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="cus-scope" scope="col">Kod <i class="fa-solid fa-sort sorticon"></i></th>
+                  <th class="cus-scope" scope="col">BYF Adı <i class="fa-solid fa-sort sorticon"></i></th>
+                  <th class="cus-scope" scope="col">Varlık Sınıfı <i class="fa-solid fa-sort sorticon"></i></th>
+                  <th class="cus-scope" scope="col">Toplam Varlıklar <i class="fa-solid fa-sort sorticon"></i></th>
+                  <th class="cus-scope" scope="col">YTD Fiyat Değişikliği <i class="fa-solid fa-sort sorticon"></i></th>
+                  <th class="cus-scope" scope="col">
+                    Ort. Günlük <br />Hisse Hacmi <i class="fa-solid fa-sort sorticon"></i><br />3 Aylık</i>
+                  </th>
+                  <th class="cus-scope" scope="col">Önceki Kapanış Fiyatı <i class="fa-solid fa-sort sorticon"></i></th>
+                </tr>
+              </thead>
+                <tbody>
+                <tr>
+                  <th class="cus-scrow" scope="row">BIST</th>
+                  <td>BIST Likit Banka Endeksi</td>
+                  <td>Alternatifler</td>
+                  <td>78955674,45 ₺</td>
+                  <td>%-16.20</td>
+                  <td>987366986,47</td>
+                  <td>97,47 ₺</td>
+                </tr>
+                <tr>
+                  <th class="cus-scrow" scope="row">IAB</th>
+                  <td>BIST 50-30 Endeksi</td>
+                  <td>Alternatifler</td>
+                  <td>33,4309530 ₺</td>
+                  <td>%-16.20</td>
+                  <td>33,737104</td>
+                  <td>36,85 ₺</td>
+                </tr>
+                <tr>
+                  <th class="cus-scrow" scope="row">BAT</th>
+                  <td>BIST Likit Banka Endeksi</td>
+                  <td>Alternatifler</td>
+                  <td>78955674,45 ₺</td>
+                  <td>%-17.30</td>
+                  <td>987366986,47</td>
+                  <td>223,85 ₺</td>
+                </tr>
+                <tr>
+                  <th class="cus-scrow" scope="row">ZTK</th>
+                  <td>Yıldız Pazar Likit Temettü</td>
+                  <td>Alternatifler</td>
+                  <td>78955674,45 ₺</td>
+                  <td>%-16.20</td>
+                  <td>987366986,47</td>
+                  <td>97,47 ₺</td>
+                </tr>
+                <tr>
+                  <th class="cus-scrow" scope="row">ZST</th>
+                  <td>BIST 50-30 Endeksi</td>
+                  <td>Alternatifler</td>
+                  <td>33,4309530 ₺</td>
+                  <td>%-12.20</td>
+                  <td>987366986,47</td>
+                  <td>36,85 ₺</td>
+                </tr>
+                <tr>
+                  <th class="cus-scrow" scope="row">BIST</th>
+                  <td>BIST Likit Banka Endeksi</td>
+                  <td>Alternatifler</td>
+                  <td>33,4309530 ₺</td>
+                  <td>%-15.40</td>
+                  <td>33,737104</td>
+                  <td>223,85 ₺</td>
+                </tr>
+                <tr>
+                  <th class="cus-scrow" scope="row">DOT</th>
+                  <td>Yıldız Pazar Likit Temettü</td>
+                  <td>Alternatifler</td>
+                  <td>33,4309530 ₺</td>
+                  <td>%-17.30</td>
+                  <td>33,737104</td>
+                  <td>36,85 ₺</td>
+                </tr>
+                <tr>
+                  <th class="cus-scrow" scope="row">IAB</th>
+                  <td>BIST 50-30 Endeksi</td>
+                  <td>Alternatifler</td>
+                  <td>33,4309530 ₺</td>
+                  <td>%-16.20</td>
+                  <td>987366986,47</td>
+                  <td>97,47 ₺</td>
+                </tr>
+                <tr>
+                  <th class="cus-scrow" scope="row">BAT</th>
+                  <td>BIST Likit Banka Endeksi</td>
+                  <td>Alternatifler</td>
+                  <td>78955674,45 ₺</td>
+                  <td>%-15.40</td>
+                  <td>987366986,47</td>
+                  <td>223,85 ₺</td>
+                </tr>
+                <tr>
+                  <th class="cus-scrow" scope="row">ZTK</th>
+                  <td>Yıldız Pazar Likit Temettü</td>
+                  <td>Alternatifler</td>
+                  <td>33,4309530 ₺</td>
+                  <td>%-17.30</td>
+                  <td>33,737104</td>
+                  <td>36,85 ₺</td>
+                </tr>
+                <tr>
+                  <th class="cus-scrow" scope="row">ZST</th>
+                  <td>BIST 50-30 Endeksi</td>
+                  <td>Alternatifler</td>
+                  <td>78955674,45 ₺</td>
+                  <td>%-15.40</td>
+                  <td>33,737104</td>
+                  <td>223,85 ₺</td>
+                </tr>
+                <tr>
+                  <th class="cus-scrow" scope="row">BIST</th>
+                  <td>BIST Likit Banka Endeksi</td>
+                  <td>Alternatifler</td>
+                  <td>78955674,45 ₺</td>
+                  <td>%-17.30</td>
+                  <td>987366986,47</td>
+                  <td>97,47 ₺</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footy"></div>
+
+    <!-- JS BUNDLES / JS CODES -->
+    <script src="../js/clear.js"></script>
+    <script src="../js/table.js"></script>
+    <script src="https://cdn.datatables.net/v/bs5/dt-1.13.4/r-2.4.1/datatables.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

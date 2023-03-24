@@ -1,0 +1,429 @@
+/* MAX WIDTH : XXS */
+@media (max-width:576px) {
+  .topli {
+    padding: 0 2rem;
+    line-height: 1.5rem;
+    color: #eeeeee;
+  }
+
+  .lastli {
+    border-left: 1px solid #fafafa;
+    padding-right: 2rem;
+  }
+  .navbar {
+    justify-content: space-around;
+  }
+  .logostyle {
+    padding-left: 1rem;
+  }
+  .hv1:before  {
+  right:1em;
+  }
+  .hv1:after{
+  left:1em;
+  }
+ 
+
+  .play-icon {
+    height: 4rem;
+    width: 4rem;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    margin-top: -6rem;
+    margin-left: -2rem;
+  }
+
+  .ellipse{
+    height: 7rem;
+    width: 7rem;
+    position: absolute;
+    background-color: #d3d2d2;
+    border-radius: 50%;
+    left:5%;
+    bottom:65%;
+    z-index: 0;
+  
+  }
+  .ellipse2{
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    background-color: #d3d2d2;
+    border-radius: 50%;
+    right:5%;
+    top: 65%;
+    z-index: 0;
+  }
+
+  .footcon {
+    position: relative;
+    height: 187px;
+
+    
+  }
+  
+  .footh3{
+    position: absolute;
+    text-align: center;
+    margin-left: 0;
+    padding: 0;
+    left: 28%;
+    bottom:10%;
+    font-size: 1rem;
+    line-height: normal;
+    color: #ececec;
+    
+  
+  }
+  .ico-cust{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    color: #ececec;
+    float:right;
+  }
+  .spnum{
+    position:absolute;
+    font-size: 7px;
+    top: 32%;
+    left: 31.8%;
+    color: #ececec;
+    float: right;
+  }
+  .spp1{
+    font-size: 14px;
+    position: absolute;
+    top: 28%;
+    left: 46%;
+    color: #ececec;
+    float: right;
+  }
+  .spp2{
+    font-size: 14px;
+    text-decoration: overline;
+    position: absolute;
+    top: 44%;
+    left: 42%;
+    color: #ececec;
+    float: right;
+  }
+  .sb-row{
+    padding: 10px;
+  }
+  .sub-play-icon{
+    height: 4rem;
+    width: 4rem;
+    left: 50%;
+    top: 60%;
+
+  }
+  .sub-img-fluid{
+    height: auto;
+  }
+
+}
+
+/* MAX WIDTH 768 (XS-SM) */
+
+
+@media (max-width:768px){
+  .hidden-sm{
+    display: none;
+  }
+  .sb-card-title{
+   display: none;
+  }
+ 
+}
+/*  */
+/*  */
+/*  */
+
+/* MAX WIDTH BETWEEN 577px -- 700px (CUSTOM SIZE) */
+@media(min-width:577px) and (max-width:700px){
+  .footcon {
+    position: relative;
+    height: 187px;
+
+    
+  }
+  
+  .footh3{
+    position: absolute;
+    text-align: center;
+    margin-left: 0;
+    padding: 0;
+    left: 28%;
+    bottom:10%;
+    font-size: 1rem;
+    line-height: normal;
+    color: #ececec;
+    
+  
+  }
+  .ico-cust{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    color: #ececec;
+    float:right;
+  }
+  .spnum{
+    position:absolute;
+    font-size: 7px;
+    top: 32%;
+    left: 31.7%;
+    color: #ececec;
+    float: right;
+  }
+  .spp1{
+    font-size: 14px;
+    position: absolute;
+    top: 28%;
+    left: 46%;
+    color: #ececec;
+    float: right;
+  }
+  .spp2{
+    font-size: 14px;
+    text-decoration: overline;
+    position: absolute;
+    top: 44%;
+    left: 42%;
+    color: #ececec;
+    float: right;
+  }
+  .sb-row{
+    padding: 1rem;
+  }
+  .sb-card{
+
+    max-width: 90%;
+    padding: 3rem 1rem;
+   }
+   .sb-card-2{
+  
+    max-width: 90%;
+    padding: 3rem 1rem;
+  }
+  .sub-play-icon{
+    height: 5rem;
+    width: 5rem;
+    left: 50%;
+    top: 60%;
+
+  }
+  .sub-img-fluid{
+    height: auto;
+  }
+}
+/*  */
+/*  */
+
+
+
+  /* WIDTH BETWEEN 701px--991px (CUSTOM SIZE)  */
+
+@media(min-width:701px) and (max-width:991px){
+  .footcon {
+    position: relative;
+    height: 187px;
+
+    
+  }
+  
+  .footh3{
+    position: absolute;
+    text-align: center;
+    margin-left: 0;
+    padding: 0;
+    left: 35%;
+    bottom:10%;
+    font-size: 1rem;
+    line-height: normal;
+    color: #ececec;
+    
+  
+  }
+  .ico-cust{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    color: #ececec;
+    float:right;
+  }
+  .spnum{
+    position:absolute;
+    font-size: 7px;
+    top: 32%;
+    left: 36.2%;
+    color: #ececec;
+    float: right;
+  }
+  .spp1{
+    font-size: 14px;
+    position: absolute;
+    top: 28%;
+    left: 46%;
+    color: #ececec;
+    float: right;
+  }
+  .spp2{
+    font-size: 14px;
+    text-decoration: overline;
+    position: absolute;
+    top: 44%;
+    left: 42%;
+    color: #ececec;
+    float: right;
+  }
+  .sb-row{
+    padding: 1rem;
+  }
+}
+
+
+/* WIDTH BETWEEN SM TO MD */
+
+@media(min-width:768px) and (max-width:991px){
+  .ellipse{
+    height: 8rem;
+    width: 8rem;
+    position: absolute;
+    background-color: #d3d2d2;
+    border-radius: 50%;
+    left:17.5%;
+    bottom:65%;
+    z-index: 0;
+  
+  }
+  .ellipse2{
+    height: 11rem;
+    width: 11rem;
+    position: absolute;
+    background-color: #d3d2d2;
+    border-radius: 50%;
+    right:17.5%;
+    top: 65%;
+    z-index: 0;
+  }
+  .sb-img{
+    padding: 0;
+  }
+  .sb-card{
+    max-width: 90%;
+   }
+   .sb-card-2{
+  
+    max-width: 90%;
+  
+  }
+  .sub-img-fluid{
+    height: auto;
+  }
+}
+
+/* MAX WIDTH LG */
+@media(max-width:991px){
+  .bli {
+    text-align: right !important;
+    font-weight: 500;
+    font-size: 18px;
+    padding-bottom: 10px !important;
+    
+    line-height: 22px;
+    color: #545f65;
+  }
+  .srcbtn{
+    padding-right: 30px !important;
+  }
+
+}
+/* WIDTH BETWEEN MD - LG */
+
+
+@media(min-width:992px) and (max-width:1400px){
+  .colbyf2{
+    padding-right: 100px;
+  }
+  .conel{
+    padding-left: 60px;
+  }
+  .ellipse{
+    height: 8rem;
+    width: 8rem;
+    position: absolute;
+    background-color: #d3d2d2;
+    border-radius: 50%;
+    right:50%;
+    bottom:65%;
+    z-index: 0;
+  
+  }
+  .ellipse2{
+    height: 11rem;
+    width: 11rem;
+    position: absolute;
+    background-color: #d3d2d2;
+    border-radius: 50%;
+    left:65%;
+    top: 65%;
+    z-index: 0;
+  }
+  .footh3{
+    margin-left: 7.5rem;
+    font-size: 1rem;
+    line-height: normal;
+    color: #ececec;
+    float:left;
+  
+  }
+  .ico-cust{
+    position: absolute;
+    top: 45%;
+    left: 65%;
+    color: #ececec;
+    float:right;
+  }
+  .spnum{
+    position:absolute;
+    font-size: 7px;
+    top: 43%;
+    left: 66%;
+    color: #ececec;
+    float: right;
+  }
+  .spp1{
+    font-size: 14px;
+    position: absolute;
+    top: 38%;
+    left: 72%;
+    color: #ececec;
+    float: right;
+  }
+  .spp2{
+    font-size: 14px;
+    text-decoration: overline;
+    position: absolute;
+    top: 54%;
+    left: 70%;
+    color: #ececec;
+    float: right;
+  }
+  .sb-img{
+    padding: 1rem;
+  }
+  .sb-row{
+    padding: 2.5rem 5rem;
+   }
+   .sb-card{
+    max-width: 90%;
+   }
+   .sb-card-2{
+  
+    max-width: 90%;
+  }
+ 
+
+}
